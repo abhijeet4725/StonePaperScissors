@@ -1,9 +1,8 @@
 import random
 lst = ["Stone" , "Paper" , "Scissors"]
-mood = input("Do you want to play:")
-if mood.upper() == "YES":
-    play = True
-while play is True:
+mood = str(input("Do you want to play:")).upper()
+
+while mood == "Y":
 
     Your_Choice = input("Enter your Choice from (Stone , Paper , Scissor)")
     Computer_Choice = random.choice(lst)
@@ -29,4 +28,4 @@ while play is True:
         break
     else:
         print("INVALID CHOICE")
-        
+    mood = input("Do you want to play:")
